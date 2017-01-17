@@ -41,7 +41,7 @@ $email_strings_file_by_client = array(
 
 /** Strings for the "New client created" e-mail */
 $email_strings_new_client = array(
-									'subject'		=> __('Welcome to ProjectSend','cftp_admin'),
+									'subject'		=> __('Welcome to the ' . THIS_INSTALL_SET_TITLE,'cftp_admin'),
 									'body'			=> __('A new account was created for you. From now on, you can access the files that have been uploaded under your account using the following credentials:','cftp_admin'),
 									'body2'			=> __('You can log in following this link','cftp_admin'),
 									'body3'			=> __('Please contact the administrator if you need further assistance.','cftp_admin'),
@@ -71,10 +71,10 @@ else {
 
 /** Strings for the "New system user created" e-mail */
 $email_strings_new_user = array(
-									'subject'		=> __('Welcome to ProjectSend','cftp_admin'),
+									'subject'		=> __('Welcome to the ' . THIS_INSTALL_SET_TITLE,'cftp_admin'),
 									'body'			=> __('A new account was created for you. From now on, you can access the system administrator using the following credentials:','cftp_admin'),
 									'body2'			=> __('Access the system panel here','cftp_admin'),
-									'body3'			=> __('Thank you for using ProjectSend.','cftp_admin'),
+									'body3'			=> __('Thank you for using the ' . THIS_INSTALL_SET_TITLE . '.','cftp_admin'),
 									'label_user'	=> __('Your username','cftp_admin'),
 									'label_pass'	=> __('Your password','cftp_admin')
 								);
