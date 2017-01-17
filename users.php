@@ -292,7 +292,7 @@ include('header.php');
 				?>
 				<tr>
 					<td>
-						<?php if ($row["id"] != '1') { ?>
+						<?php if ($row["id"] != '0') { ?>
 							<input type="checkbox" name="users[]" value="<?php echo html_output($row["id"]); ?>" />
 						<?php } ?>
 					</td>
@@ -311,8 +311,8 @@ include('header.php');
 						<?php
 							$status_hidden	= __('Inactive','cftp_admin');
 							$status_visible	= __('Active','cftp_admin');
-							$label			= ($row['active'] === 0) ? $status_hidden : $status_visible;
-							$class			= ($row['active'] === 0) ? 'danger' : 'success';
+							$label			= ($row['active'] == 0) ? $status_hidden : $status_visible;
+							$class			= ($row['active'] == 0) ? 'danger' : 'success';
 						?>
 						<span class="label label-<?php echo $class; ?>">
 							<?php echo $label; ?>
