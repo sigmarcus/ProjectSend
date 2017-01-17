@@ -162,11 +162,13 @@ define('CLIENT_UPLOADS_TEMP_FOLDER', ROOT_DIR.'/upload/temp');
  * on the footer blocks.
  *
  */
-define('SYSTEM_URI','http://www.projectsend.org/');
-define('SYSTEM_URI_LABEL','ProjectSend on github');
-define('DONATIONS_URL','http://www.projectsend.org/donations/');
+define('SYSTEM_URI','https://vault.sys.one/');
+define('SYSTEM_URI_LABEL','Systems One File Vault');
+define('DONATIONS_URL','');
+
 /** Previously cFTP */
-define('SYSTEM_NAME','ProjectSend');
+define('SYSTEM_NAME','Systems One Consulting, Inc.');
+define('SYSTEM_NAME_URI','http://www.sysone.cc');
 
 define('LOGO_FOLDER',ROOT_DIR.'/img/custom/logo/');
 define('LOGO_THUMB_FOLDER',ROOT_DIR.'/img/custom/thumbs/');
