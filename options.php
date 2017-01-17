@@ -266,7 +266,7 @@ $allowed_file_types = implode(',',$allowed_file_types);
 										<div class="options_divide"></div>
 			
 										<h3><?php _e('System location','cftp_admin'); ?></h3>
-										<p class="text-warning"><?php _e('These options are to be changed only if you are moving the system to another place. Changes here can cause ProjectSend to stop working.','cftp_admin'); ?></p>
+										<p class="text-warning"><?php _e('These options are to be changed only if you are moving the system to another place. Changes here can cause the ' . THIS_INSTALL_SET_TITLE . ' to stop working.','cftp_admin'); ?></p>
 			
 										<div class="form-group">
 											<label for="base_uri" class="col-sm-4 control-label"><?php _e('System URI','cftp_admin'); ?></label>
