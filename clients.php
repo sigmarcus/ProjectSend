@@ -321,8 +321,8 @@ $(document).ready(function() {
 										<?php
 											$status_hidden	= __('Inactive','cftp_admin');
 											$status_visible	= __('Active','cftp_admin');
-											$label			= ($row['active'] === 0) ? $status_hidden : $status_visible;
-											$class			= ($row['active'] === 0) ? 'danger' : 'success';
+											$label			= ($row['active'] == 0) ? $status_hidden : $status_visible;
+											$class			= ($row['active'] == 0) ? 'danger' : 'success';
 										?>
 										<span class="label label-<?php echo $class; ?>">
 											<?php echo $label; ?>
