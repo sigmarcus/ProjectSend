@@ -11,7 +11,7 @@ $load_scripts	= array(
 
 $allowed_levels = array(9,8,7);
 require_once('sys.includes.php');
-$page_title = __('Welcome to ProjectSend', 'cftp_admin');
+$page_title = 'Welcome to ' . THIS_INSTALL_SET_TITLE;
 
 $active_nav = 'dashboard';
 
@@ -21,7 +21,7 @@ define('CAN_INCLUDE_FILES', true);
 ?>
 
 <div id="main">
-	<h2><?php echo $page_title; ?></h2>
+	<!--<h2><?php //echo $page_title; ?></h2>-->
 
 	<div class="home">
 		<div class="container-fluid">
@@ -57,10 +57,10 @@ define('CAN_INCLUDE_FILES', true);
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-6">
-								<?php include(ROOT_DIR.'/home-news-widget.php'); ?>
-							</div>
-							<div class="col-sm-6">
+							<!--<div class="col-sm-6">
+								<?php //include(ROOT_DIR.'/home-news-widget.php'); ?>
+							</div>-->
+							<div class="col-sm-12">
 								<div class="widget">
 									<h4><?php _e('System data','cftp_admin'); ?></h4>
 									<div class="widget_int">
