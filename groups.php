@@ -291,7 +291,7 @@ include('header.php');
 				?>
 				<tr>
 					<td>
-						<?php if ($row["id"] != '1') { ?>
+						<?php if ($row["id"] != '0') { ?>
 							<input type="checkbox" name="groups[]" value="<?php echo $row["id"]; ?>" />
 						<?php } ?>
 					</td>
