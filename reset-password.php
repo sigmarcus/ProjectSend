@@ -8,7 +8,7 @@
 $allowed_levels = array(9,8,7,0);
 require_once('sys.includes.php');
 
-$page_title = __('Lost password','cftp_admin');
+$page_title = __('Reset password','cftp_admin');
 
 include('header-unlogged.php');
 	$show_form = 'enter_email';
