@@ -11,7 +11,7 @@ $load_scripts	= array(
 
 $allowed_levels = array(9,8,7);
 require_once('sys.includes.php');
-$page_title = 'Welcome to ' . THIS_INSTALL_SET_TITLE;
+$page_title = 'Welcome to the ' . THIS_INSTALL_SET_TITLE;
 
 $active_nav = 'dashboard';
 
@@ -57,10 +57,24 @@ define('CAN_INCLUDE_FILES', true);
 							</div>
 						</div>
 						<div class="row">
-							<!--<div class="col-sm-6">
+							<div class="col-sm-6">
 								<?php //include(ROOT_DIR.'/home-news-widget.php'); ?>
-							</div>-->
-							<div class="col-sm-12">
+								<div class="widget">
+									<h4><?php _e('Used Disk Space','cftp_admin'); ?></h4>
+									<div class="widget_int">
+									<?php
+										$total_file_size = 0;
+										foreach (new DirectoryIterator('/var/www/html/upload/files') as $file) {
+											if ($file -> isFile()) {
+												$total_file_size += $file->getSize();
+											}
+										}
+									?>
+										Total Disk Space Used: <?php echo html_output(format_file_size($total_file_size)); ?>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
 								<div class="widget">
 									<h4><?php _e('System data','cftp_admin'); ?></h4>
 									<div class="widget_int">
